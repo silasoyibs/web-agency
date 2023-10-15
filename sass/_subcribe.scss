@@ -1,0 +1,87 @@
+.subcribe {
+  background-color: purple;
+  z-index: -1;
+
+  // grid-template-columns: repeat(12,1fr);
+  // grid-template-rows: 30rem;
+  // align-items: center;
+  // z-index: 100;
+
+  // padding: 7rem 0;
+
+  &__video {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &___video--overlay {
+    background-color: #101010;
+    opacity: 0.7;
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__container {
+    background-color: transparent;
+    grid-column: 3/10;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 20rem;
+    column-gap: 3rem;
+    z-index: 4;
+    @media screen and (max-width: 37em) {
+      grid-template-columns: 1fr;
+      text-align: center;
+      padding: 0 4rem 4rem 2rem;
+    }
+    &-content {
+      padding-top: 4rem;
+      background-color: transparent;
+      span {
+        display: block;
+        height: 2px;
+        width: 100%;
+        background: linear-gradient($gradient);
+      }
+    }
+    &-form {
+      background-color: transparent;
+      padding-top: 4rem;
+      z-index: 1000;
+      &-email {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content;
+        form {
+          grid-column: 1/-1;
+          grid-row: 1/1;
+          display: grid;
+        }
+      }
+    }
+  }
+}
+
+.subcribe--overlay {
+  background-color: purple;
+  z-index: 10;
+  grid-row: 10/11;
+  grid-column: 1/-1;
+}
+
+.subcribe-form-email {
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  grid-column: 1/-1;
+}
+
+.btn--subcribe {
+  justify-self: end;
+  grid-column: 1/-1;
+  grid-row: 1/1;
+}

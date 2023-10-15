@@ -1,0 +1,55 @@
+.digital__work{
+    background-color:#1D1D1D;
+    grid-row:7/8;
+    grid-column: 3/10;
+    display: grid;
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+    padding-right: 3rem;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:1fr;
+    border-radius: 5px;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    position:relative;
+    &-img-container{
+      justify-self: center;
+      img{
+        width:140px;
+        height:140px;
+        border-radius: 5px;
+        object-fit: cover;
+      }
+    }
+
+    &-content{
+      display: flex;
+      flex-direction: column;
+      gap:2rem;
+    }
+
+    &-navigation{
+      display: flex;
+      column-gap: 5px;
+      position:absolute;
+      top:105%;
+      .circle{
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        background-color: #212529b7;
+      }
+      .active-control{
+        transform: scale(1.2);
+        border-radius: 50%;
+        background-color: #F44E77;
+      }
+    }
+    
+  }
+  .btn-digital{
+    background: none;
+    border:2px solid #fff ;
+    align-self: start;
+  }
+  
