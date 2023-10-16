@@ -41,6 +41,8 @@ $bp-small: 37.5em; // 600px
 html {
   box-sizing: border-box;
   font-size: 62.5%; // 1rem = 10px
+
+overflow-x: hidden;
   
     @include respond(tab-land) { //width < 1200
       font-size: 56.25%; //1rem = 9px, 9/16 = 56.25%
@@ -58,6 +60,7 @@ body {
   background-color: $color-dark;
   font-size:2rem;
   font-family: 'Montserrat', sans-serif;
+  position: relative;
 }
 .center-container{
   max-width:90rem;

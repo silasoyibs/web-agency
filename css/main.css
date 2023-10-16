@@ -19,6 +19,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 @media only screen and (max-width: 75em) {
   html {
@@ -40,6 +41,7 @@ body {
   background-color: #101010;
   font-size: 2rem;
   font-family: "Montserrat", sans-serif;
+  position: relative;
 }
 
 .center-container {
@@ -184,31 +186,19 @@ body {
   -moz-column-gap: 20px;
        column-gap: 20px;
   border-bottom: 1px solid rgba(33, 37, 41, 0.7176470588);
-  position: relative;
-}
-@media screen and (max-width: 66.25em) {
-  .header {
-    display: flex;
-    justify-content: space-between;
-  }
 }
 .header__logo {
   display: block;
   text-transform: uppercase;
-  color: #FFF;
+  color: #fff;
   font-size: 3rem;
   font-weight: bold;
 }
 .header__nav {
   font-size: 1.5rem;
-  color: #FFF;
+  color: #fff;
   text-transform: uppercase;
   font-weight: 300;
-}
-@media screen and (max-width: 66.25em) {
-  .header__nav {
-    display: none;
-  }
 }
 .header__nav__container {
   display: flex;
@@ -216,14 +206,33 @@ body {
   gap: 1rem;
   align-items: center;
   justify-content: flex-end;
-  position: relative;
+}
+@media screen and (max-width: 66.25em) {
+  .header__nav__container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(100%);
+    background-color: #000000;
+    z-index: 10000;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transition: all 0.5s;
+  }
 }
 .header__nav__container__list {
   list-style: none;
 }
 .header__nav__container__list__link {
   text-decoration: none;
-  color: #FFF;
+  color: #fff;
   font-weight: 500;
   display: block;
   padding: 1rem 2rem;
@@ -243,11 +252,26 @@ body {
   transform: scale(0);
   transition: all 0.4s ease-out;
 }
+@media screen and (max-width: 66.25em) {
+  .header__nav__container__list__link::before {
+    display: none;
+  }
+}
 .header__nav__container__list__link:hover::before {
   transform: scale(1);
 }
+@media screen and (max-width: 66.25em) {
+  .header__nav__container__list__link:hover {
+    color: #F44E77;
+  }
+}
 .header__nav__container__list__link-active::before {
   transform: scale(1);
+}
+@media screen and (max-width: 66.25em) {
+  .header__nav__container__list__link-active {
+    color: #F44E77;
+  }
 }
 .header__hamburger {
   width: 5rem;
@@ -256,25 +280,38 @@ body {
   right: 0;
   padding-top: 2rem;
   display: none;
+  color: #ffffff;
+  z-index: 10;
+}
+.header__hamburger .hamburger-menu[name=header-xmark] {
+  display: none;
 }
 @media screen and (max-width: 66.25em) {
   .header__hamburger {
     display: block;
+    z-index: 10000000;
   }
-}
-.header__hamburger .header-bar {
-  color: #ffffff;
-}
-.header__hamburger .header-xmark {
-  display: none;
-  color: #ffffff;
-  z-index: 10;
 }
 
 @media screen and (max-width: 66.25em) {
   .btn {
     display: none;
   }
+}
+
+@media screen and (max-width: 66.25em) {
+  .nav-open .header__nav__container {
+    visibility: visible;
+    pointer-events: auto;
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.nav-open .hamburger-menu[name=header-xmark] {
+  display: block;
+}
+.nav-open .hamburger-menu[name=header-bar] {
+  display: none;
 }
 
 .hero {
