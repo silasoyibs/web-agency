@@ -1,17 +1,13 @@
 .services{
-  @media screen and (max-width:37.5em){
-    padding:0 4rem;
-    }
     &__content{
-      display:grid;
-      grid-template-columns: repeat(auto-fit,minmax(24rem,1fr));
-      row-gap: 7rem;
-      column-gap:3rem;
-      padding-top: 5rem;
-      @media screen and (max-width:37.5em){
-        padding-top: 0rem;
-        }
+      display:flex;
+      column-gap: 10px;
+      flex-wrap:wrap;
+      align-items: center;
+      justify-content: center;
       &-item{
+        max-width: 30rem;
+        margin-bottom: 3rem;
         display: grid;
         justify-items: center;
         row-gap: 2rem;
@@ -21,6 +17,7 @@
         padding-top: 4rem;
         transition: all 1s cubic-bezier(0,.99,1,.99);
         position: relative;
+
         &::before{
           content: "";
           height:6px;
