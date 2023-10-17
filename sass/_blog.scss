@@ -14,10 +14,12 @@
      gap:10px;
      flex-wrap: wrap;
      justify-content: center;
-     align-items:center;
+     align-items:stretch;
 
       &-item{
+        margin-bottom: 3px;
         max-width:30rem;
+        min-width: 30rem;
         background-color:#191919;
         border: 2px solid #212529b7;
         border-radius: 5px;

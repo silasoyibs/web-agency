@@ -511,11 +511,12 @@ body {
   -moz-column-gap: 10px;
        column-gap: 10px;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
 }
 .services__content-item {
   max-width: 30rem;
+  min-width: 30rem;
   margin-bottom: 3rem;
   display: grid;
   justify-items: center;
@@ -545,6 +546,9 @@ body {
 }
 .services__content-item:hover::before {
   transform: scale(1);
+}
+.services__heading {
+  padding-bottom: 5rem;
 }
 @media screen and (max-width: 37.5em) {
   .services__heading h3 {
@@ -768,10 +772,12 @@ body {
   gap: 10px;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
 }
 .blog__content-item {
+  margin-bottom: 3px;
   max-width: 30rem;
+  min-width: 30rem;
   background-color: #191919;
   border: 2px solid rgba(33, 37, 41, 0.7176470588);
   border-radius: 5px;
