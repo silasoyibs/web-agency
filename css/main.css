@@ -42,10 +42,11 @@ body {
   font-size: 2rem;
   font-family: "Montserrat", sans-serif;
   position: relative;
+  overflow-x: hidden;
 }
 
 .center-container {
-  max-width: 90rem;
+  max-width: 100rem;
   margin: 0 auto;
 }
 
@@ -175,9 +176,6 @@ body {
   }
 }
 .header {
-  max-width: 100rem;
-  margin: 0 auto;
-  padding: 3rem 5rem 0 3rem;
   display: grid;
   grid-template-columns: max-content 1fr max-content;
   grid-template-rows: 5rem;
@@ -186,6 +184,12 @@ body {
   -moz-column-gap: 20px;
        column-gap: 20px;
   border-bottom: 1px solid rgba(33, 37, 41, 0.7176470588);
+  padding: 3rem 10rem 0 10rem;
+}
+@media screen and (max-width: 66.25em) {
+  .header {
+    padding: 3rem 2rem 0 2rem;
+  }
 }
 .header__logo {
   display: block;
@@ -280,6 +284,7 @@ body {
   top: 0;
   right: 0;
   padding-top: 2rem;
+  margin-right: 3rem;
   display: none;
   color: #ffffff;
   z-index: 10;
@@ -327,6 +332,12 @@ body {
     grid-template-columns: 1fr;
   }
 }
+@media screen and (max-width: 66.25em) {
+  .hero {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
 .hero__content--heading {
   font-size: 5.5rem;
   font-weight: 800;
@@ -362,12 +373,8 @@ body {
 }
 @media screen and (max-width: 30em) {
   .hero__content p {
-    font-size: 2rem;
-  }
-}
-@media screen and (max-width: 30em) and (max-width: 30em) {
-  .hero__content p {
     padding: 0;
+    font-size: 2rem;
   }
 }
 .hero__img {
@@ -381,8 +388,18 @@ body {
     margin: 0 auto;
   }
 }
+@media screen and (max-width: 28em) {
+  .hero__img {
+    width: 40rem;
+  }
+}
+@media screen and (max-width: 23em) {
+  .hero__img {
+    width: 30rem;
+  }
+}
 .hero__img--1 {
-  width: 100%;
+  width: 90%;
   height: 40%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -408,7 +425,7 @@ body {
   }
 }
 .hero__img--2 {
-  width: 100%;
+  width: 90%;
   height: 76%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -564,8 +581,7 @@ body {
   }
 }
 .recommendation__content {
-  display: grid;
-  grid-row: repeat(4, min-content);
+  padding: 0 3rem;
 }
 @media screen and (max-width: 37em) {
   .recommendation__content {
@@ -574,7 +590,11 @@ body {
     padding-top: 10rem;
   }
 }
+.recommendation__content__text {
+  padding-top: 5rem;
+}
 .recommendation__img {
+  max-height: 50rem;
   overflow: clip;
 }
 @media screen and (max-width: 37em) {
@@ -597,6 +617,7 @@ body {
 }
 
 .btn-recommedation {
+  margin-top: 3rem;
   align-self: start;
 }
 @media screen and (max-width: 66.25em) {
@@ -612,6 +633,7 @@ body {
 
 .heading--recommendation {
   align-self: end;
+  padding-top: 3rem;
 }
 
 .agency {

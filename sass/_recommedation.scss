@@ -9,15 +9,19 @@
   
     
     &__content{
-      display:grid;
-      grid-row: repeat(4,min-content);
+      padding:0 3rem;
+    
       @media screen and (max-width:37em){
         text-align: center;
         justify-items: center;
         padding-top: 10rem;
        }
+       &__text{
+          padding-top:5rem;
+       }
     }
     &__img{
+      max-height: 50rem;
       @media screen and (max-width:37em){
         order:1;
         height: 90%;
@@ -38,6 +42,7 @@
   }
 
   .btn-recommedation{
+    margin-top:3rem;
     align-self: start;
     @media screen and (max-width:66.25em){
       display:block;
@@ -48,5 +53,6 @@
   }
   .heading--recommendation{
     align-self: end;
+    padding-top: 3rem;
   
   }
