@@ -10,6 +10,21 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: stretch;
+    @media screen and (min-width:48em){
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: stretch;
+    }
+    @media screen and (max-width:47em){
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: stretch;
+    }
+    
 
     &-item {
       margin-bottom: 30px;
