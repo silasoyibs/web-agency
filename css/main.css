@@ -586,6 +586,13 @@ body {
     padding-top: 10rem;
   }
 }
+@media screen and (max-width: 23em) {
+  .recommendation__content {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+  }
+}
 .recommendation__content__text {
   padding-top: 5rem;
 }
@@ -624,6 +631,11 @@ body {
 @media screen and (max-width: 37em) {
   .btn-recommedation {
     justify-self: center;
+  }
+}
+@media screen and (max-width: 23em) {
+  .btn-recommedation {
+    align-self: center;
   }
 }
 
@@ -775,7 +787,7 @@ body {
   align-items: stretch;
 }
 .blog__content-item {
-  margin-bottom: 3px;
+  margin-bottom: 30px;
   max-width: 30rem;
   min-width: 30rem;
   background-color: #191919;

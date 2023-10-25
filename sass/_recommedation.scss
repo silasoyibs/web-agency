@@ -6,6 +6,7 @@
       grid-template-columns:1fr; 
       padding:0 4rem;
      }
+    
   
     
     &__content{
@@ -16,6 +17,12 @@
         justify-items: center;
         padding-top: 10rem;
        }
+       @media screen and (max-width:23em){
+        display:flex;
+        flex-direction: column;;
+        place-items: center;
+       }
+    
        &__text{
           padding-top:5rem;
        }
@@ -39,6 +46,7 @@
         filter: grayscale(0);
       }
     }
+
   }
 
   .btn-recommedation{
@@ -50,6 +58,10 @@
      @media screen and (max-width:37em){
       justify-self: center;
      }
+     @media screen and (max-width:23em){
+      align-self:center;
+     }
+    
   }
   .heading--recommendation{
     align-self: end;
