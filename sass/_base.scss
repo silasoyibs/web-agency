@@ -39,20 +39,26 @@ $bp-small: 37.5em; // 600px
   
 }
 html {
+  // desktop > 1025px
   box-sizing: border-box;
   font-size: 62.5%; // 1rem = 10px
   overflow-x: hidden;
-  
-    @include respond(tab-land) { //width < 1200
-      font-size: 56.25%; //1rem = 9px, 9/16 = 56.25%
-  }
-  @include respond(tab-port) { //width < 900
-      font-size: 50%; //1rem = 8px, 8/18 = 50%
-  }
-  @include respond(big-desktop) {
-      font-size: 75%; //1rem = 12, 12/16 = 75%
-  }
-
+  // tablet(portrait and landscape === 1024px)
+ @media screen and (max-width:64em){
+  font-size:59.5%;
+ }
+ // tablet(portrait === 768px)
+ @media screen and (max-width:48em){
+  font-size:56.3%;
+ }
+ // phone(portrait === 480px)
+ @media screen and (max-width:30em){
+  font-size:53.1%;
+ }
+  // phone(portrait === 375px)
+ @media screen and (max-width:23em){
+  font-size:50%;
+ }
 }
 
 body {

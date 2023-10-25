@@ -5,20 +5,6 @@
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: center;
-    @media screen and (min-width: 48em) {
-      display: flex;
-      column-gap: 10px;
-      flex-wrap: wrap;
-      align-items: stretch;
-      justify-content: center;
-    }
-    @media screen and (max-width: 47em) {
-      display: flex;
-      column-gap: 10px;
-      flex-wrap: wrap;
-      align-items: stretch;
-      justify-content: center;
-    }
     &-item {
       max-width: 30rem;
       min-width: 30rem;
@@ -58,7 +44,7 @@
   &__heading {
     padding-bottom: 5rem;
     h3 {
-      @media screen and (max-width: 37.5em) {
+      @media screen and (max-width: 48em) {
         padding-top: 5rem;
       }
     }

@@ -2,7 +2,7 @@
     display:grid;
     grid-template-columns:repeat(2,1fr);
     grid-gap: 4rem;
-    @media screen and (max-width:37em){
+    @media screen and (max-width:48em){
       grid-template-columns:1fr; 
       padding:0 4rem;
      }
@@ -12,7 +12,7 @@
     &__content{
       padding:0 3rem;
     
-      @media screen and (max-width:37em){
+      @media screen and (max-width:48em){
         text-align: center;
         display:flex;
         flex-direction: column;;
@@ -27,7 +27,7 @@
     }
     &__img{
       max-height: 50rem;
-      @media screen and (max-width:37em){
+      @media screen and (max-width:48em){
         order:1;
         height: 90%;
        }
@@ -50,10 +50,10 @@
   .btn-recommedation{
     margin-top:3rem;
     align-self: start;
-    @media screen and (max-width:66.25em){
+    @media screen and (max-width:64em){
       display:block;
      }
-     @media screen and (max-width:37em){
+     @media screen and (max-width:48em){
       align-self:center;
      }
   }

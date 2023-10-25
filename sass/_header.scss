@@ -7,7 +7,7 @@
   column-gap: 20px;
   border-bottom: 1px solid #212529b7;
   padding:3rem 10rem 0 10rem;
-  @media screen and (max-width: 66.25em) {
+  @media screen and (max-width: 64em) {
     padding:3rem 2rem 0 2rem;
   }
 
@@ -26,10 +26,10 @@
     &__container {
       display: flex;
       height: 3.5rem;
-      gap: 1rem;
+      gap: 0.2rem;
       align-items: center;
       justify-content: flex-end;
-      @media screen and (max-width: 66.25em) {
+      @media screen and (max-width: 64em) {
         display: flex;
         flex-direction: column;
         height: 100vh;
@@ -73,7 +73,7 @@
             border-radius: 30px;
             transform: scale(0);
             transition: all 0.4s ease-out;
-            @media screen and (max-width: 66.25em) {
+            @media screen and (max-width: 64em) {
               display: none;
             }
           }
@@ -82,7 +82,7 @@
             &::before {
               transform: scale(1);
             }
-            @media screen and (max-width: 66.25em) {
+            @media screen and (max-width: 64em) {
               color: $color-secondary-2;
             }
           }
@@ -92,7 +92,7 @@
           &::before {
             transform: scale(1);
           }
-          @media screen and (max-width: 66.25em) {
+          @media screen and (max-width: 64em) {
             color: $color-secondary-2;
           }
         }
@@ -112,7 +112,7 @@
     & .hamburger-menu[name="header-xmark"]{
       display:none;
     }
-    @media screen and (max-width: 66.25em) {
+    @media screen and (max-width: 64em) {
       display: block;
       z-index: 10000000;
     }
@@ -120,14 +120,14 @@
 }
 
 .btn {
-  @media screen and (max-width: 66.25em) {
+  @media screen and (max-width: 64em) {
     display: none;
   }
 }
 
 .nav-open{
   & .header__nav__container{
-    @media screen and (max-width: 66.25em) {
+    @media screen and (max-width: 64em) {
     visibility:visible;
     pointer-events:auto;
     opacity:1;
