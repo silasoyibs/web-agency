@@ -759,11 +759,6 @@ body {
   align-self: start;
 }
 
-@media screen and (max-width: 37.5em) {
-  .blog {
-    padding: 0 4rem;
-  }
-}
 .blog__heading {
   display: grid;
   justify-items: center;
