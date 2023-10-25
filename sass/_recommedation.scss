@@ -14,14 +14,12 @@
     
       @media screen and (max-width:37em){
         text-align: center;
-        justify-items: center;
-        padding-top: 10rem;
-       }
-       @media screen and (max-width:23em){
         display:flex;
         flex-direction: column;;
         place-items: center;
+        padding-top: 10rem;
        }
+    
     
        &__text{
           padding-top:5rem;
@@ -56,12 +54,8 @@
       display:block;
      }
      @media screen and (max-width:37em){
-      justify-self: center;
-     }
-     @media screen and (max-width:23em){
       align-self:center;
      }
-    
   }
   .heading--recommendation{
     align-self: end;

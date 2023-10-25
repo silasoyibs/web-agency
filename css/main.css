@@ -582,15 +582,10 @@ body {
 @media screen and (max-width: 37em) {
   .recommendation__content {
     text-align: center;
-    justify-items: center;
-    padding-top: 10rem;
-  }
-}
-@media screen and (max-width: 23em) {
-  .recommendation__content {
     display: flex;
     flex-direction: column;
     place-items: center;
+    padding-top: 10rem;
   }
 }
 .recommendation__content__text {
@@ -629,11 +624,6 @@ body {
   }
 }
 @media screen and (max-width: 37em) {
-  .btn-recommedation {
-    justify-self: center;
-  }
-}
-@media screen and (max-width: 23em) {
   .btn-recommedation {
     align-self: center;
   }
