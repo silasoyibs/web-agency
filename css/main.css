@@ -504,6 +504,10 @@ body {
   }
 }
 
+.text-wrap {
+  white-space: nowrap;
+}
+
 .services__content {
   display: flex;
   -moz-column-gap: 10px;
