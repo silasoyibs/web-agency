@@ -515,7 +515,6 @@ body {
   flex-wrap: wrap;
   align-items: stretch;
   justify-content: center;
-  white-space: nowrap;
 }
 .services__content-item {
   max-width: 30rem;
@@ -773,7 +772,6 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: stretch;
-  white-space: nowrap;
 }
 .blog__content-item {
   margin-bottom: 30px;
