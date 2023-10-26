@@ -10,7 +10,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: stretch;
-  
+    white-space: nowrap;
 
     &-item {
       margin-bottom: 30px;
@@ -100,5 +100,4 @@
       }
     }
   }
- 
 }

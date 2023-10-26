@@ -5,6 +5,7 @@
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: center;
+    white-space: nowrap;
     &-item {
       max-width: 30rem;
       min-width: 30rem;
