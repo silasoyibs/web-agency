@@ -348,6 +348,11 @@ body {
   font-weight: 800;
   color: #fff;
 }
+@media screen and (max-width: 17.5em) {
+  .hero__content--heading {
+    font-size: 4rem;
+  }
+}
 .hero__content--heading span {
   background: linear-gradient(171.21deg, #554dde -10.74%, #f44e77 112.82%, #f44e77 112.82%);
   -webkit-background-clip: text;
@@ -504,10 +509,6 @@ body {
   }
 }
 
-.text-wrap {
-  white-space: nowrap;
-}
-
 .services__content {
   display: flex;
   -moz-column-gap: 10px;
@@ -576,6 +577,11 @@ body {
   .recommendation {
     grid-template-columns: 1fr;
     padding: 0 4rem;
+  }
+}
+@media screen and (max-width: 17.5em) {
+  .recommendation {
+    padding: 0;
   }
 }
 .recommendation__content {
@@ -656,6 +662,11 @@ body {
     padding: 0 4rem;
   }
 }
+@media screen and (max-width: 17.5em) {
+  .agency {
+    padding: 0 1rem;
+  }
+}
 @media screen and (max-width: 48em) {
   .agency__content--heading {
     text-align: center;
@@ -720,6 +731,14 @@ body {
   margin-top: 7rem;
   margin-bottom: 7rem;
   position: relative;
+}
+@media screen and (max-width: 17.5em) {
+  .digital__work {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+  }
 }
 .digital__work-img-container {
   justify-self: center;
@@ -947,9 +966,19 @@ body {
     padding: 0 4rem;
   }
 }
+@media screen and (max-width: 17.5em) {
+  .Team {
+    padding: 0 4px 0 4px;
+  }
+}
 .Team__heading {
   text-align: center;
   padding: 0 8rem;
+}
+@media screen and (max-width: 17.5em) {
+  .Team__heading {
+    padding: 0 10px 0;
+  }
 }
 .Team__gallery {
   display: grid;
@@ -1042,15 +1071,20 @@ body {
 .footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: min-content min-content 12rem 5rem;
+  grid-template-rows: min-content min-content;
+  justify-items: start;
+  gap: 10px;
+  padding: 0 10px 0 10px;
 }
-@media screen and (max-width: 48em) {
+@media screen and (max-width: 30em) {
   .footer {
-    padding: 0 4rem;
+    font-size: 1.5rem;
   }
 }
-.footer__description {
-  padding-left: 2rem;
+@media screen and (max-width: 23em) {
+  .footer {
+    grid-template-rows: min-content min-content 4rem;
+  }
 }
 .footer__description__icon {
   color: #a2a2a2;
@@ -1062,7 +1096,16 @@ body {
   color: #F44E77;
 }
 .footer__company {
-  padding-left: 2rem;
+  grid-row: 2/4;
+  grid-column: 1/1;
+}
+@media screen and (max-width: 23em) {
+  .footer__company {
+    grid-row: 2/4;
+    grid-column: 1/-1;
+    justify-self: center;
+    margin-left: -100px;
+  }
 }
 .footer__company h3 {
   margin-bottom: 2rem;
@@ -1078,18 +1121,18 @@ body {
   color: #a2a2a2;
 }
 .footer__contact {
-  margin-left: 5rem;
   display: grid;
   color: #a2a2a2;
 }
 .footer__contact div > i {
   padding-right: 1rem;
 }
-.footer__instagram {
-  display: grid;
-  grid-template-columns: repeat(3, 8rem);
-  grid-template-rows: min-content repeat(2, 8rem);
-  grid-gap: 5px;
+@media screen and (max-width: 23em) {
+  .footer__instagram {
+    grid-row: 4/5;
+    grid-column: 1/-1;
+    justify-self: center;
+  }
 }
 .footer__instagram__img {
   width: 100%;
@@ -1099,31 +1142,35 @@ body {
   display: block;
 }
 .footer__instagram h3 {
-  grid-column: 1/-1;
   margin-bottom: 2rem;
 }
-.footer__divider {
-  grid-row: 3/4;
-  grid-column: 1/-1;
-  align-self: center;
-  height: 1px;
-  width: 100%;
-  background-color: rgba(33, 37, 41, 0.7176470588);
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 3px;
 }
-.footer__copywrite {
-  grid-row: 4/5;
-  grid-column: 1/-1;
-  justify-self: center;
+
+.logo-image-container {
+  display: grid;
+  grid-template-columns: repeat(3, 8rem);
+  grid-template-rows: min-content repeat(2, 8rem);
+  grid-gap: 5px;
 }
-.footer__copywrite h3 {
+
+.footer__copywriter {
+  text-align: center;
+  padding: 0 10px 0;
+}
+.footer__copywriter h3 {
   color: #a2a2a2;
   font-size: 17px;
-  padding-bottom: 4rem;
+  text-align: center;
 }
-.footer__copywrite h3 span {
+.footer__copywriter h3 span {
   color: #ced4da;
 }
-.footer__copywrite h3 span:hover {
+.footer__copywriter h3 span:hover {
   color: #F44E77;
   cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

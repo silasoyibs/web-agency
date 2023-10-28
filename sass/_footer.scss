@@ -1,12 +1,18 @@
 .footer{
-  @media screen and (max-width:48em){
-    padding:0 4rem;
-    }
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  grid-template-rows:min-content min-content 12rem 5rem ;
+  grid-template-rows:min-content min-content ;
+  justify-items: start;
+  gap:10px;
+  padding:0 10px 0 10px;
+  @media screen and (max-width:30em){
+    font-size: 1.5rem;
+  }
+  @media screen and (max-width:23em){
+    grid-template-rows:min-content min-content 4rem;
+  }
+ 
   &__description{
-    padding-left: 2rem;
     &__icon{
       color:#a2a2a2;
       display: flex;
@@ -18,7 +24,14 @@
   }
 
   &__company{
-    padding-left: 2rem;
+ grid-row: 2/4;
+ grid-column: 1/1;
+ @media screen and (max-width:23em){
+  grid-row:2/4;
+  grid-column: 1/-1;
+  justify-self: center;
+  margin-left: -100px;
+}
     h3{
       margin-bottom:2rem;
     }
@@ -34,7 +47,6 @@
     }
   }
   &__contact{
-    margin-left: 5rem;
     display: grid;
 
     color:#a2a2a2;
@@ -44,11 +56,11 @@
   }
 
   &__instagram{
-    display: grid;
-    grid-template-columns: repeat(3,8rem);
-    grid-template-rows: min-content repeat(2,8rem);
-    grid-gap: 5px;
-   
+    @media screen and (max-width:23em){
+      grid-row:4/5;
+      grid-column: 1/-1;
+     justify-self: center;
+    }
     &__img{
       width:100%;
       height:100%;
@@ -57,34 +69,39 @@
     }
 
     h3{
-      grid-column: 1/-1;
       margin-bottom: 2rem;
     }
   }
 
-  &__divider{
-    grid-row: 3/4;
-    grid-column: 1/-1;
-    align-self: center;
-    height:1px;
-    width: 100%;
-    background-color:#212529b7;
-  }
-  &__copywrite{
-    grid-row: 4/5;
-    grid-column: 1/-1;
-    justify-self: center;
-    h3{
-      color:#a2a2a2;
-      font-size: 17px;
-      padding-bottom: 4rem;
-      span{
-        color:#ced4da;
-      }
-      span:hover{
-        color:#F44E77;
-        cursor:pointer;
-      }
+
+
+}
+
+.contact-item{
+  display: flex;
+  align-items: center;
+  gap:3px;
+
+}
+.logo-image-container{
+  display: grid;
+  grid-template-columns: repeat(3,8rem);
+  grid-template-rows: min-content repeat(2,8rem);
+  grid-gap: 5px;
+}
+.footer__copywriter{
+  text-align: center;
+  padding: 0 10px 0;
+  h3{
+    color:#a2a2a2;
+    font-size: 17px;
+    text-align: center;
+    span{
+      color:#ced4da;
+    }
+    span:hover{
+      color:#F44E77;
+      cursor:pointer;
     }
   }
 }

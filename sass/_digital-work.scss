@@ -12,6 +12,13 @@
     margin-top: 7rem;
     margin-bottom: 7rem;
     position:relative;
+    @media screen and (max-width:17.5em){
+      grid-template-columns: 1fr;
+      justify-content: center;
+      text-align: center;
+      padding: 0;
+    }
+   
     &-img-container{
       justify-self: center;
       img{
@@ -19,6 +26,7 @@
         height:140px;
         border-radius: 5px;
         object-fit: cover;
+       
       }
     }
 

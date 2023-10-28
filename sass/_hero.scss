@@ -10,6 +10,9 @@
     padding-left:3rem;
     padding-right: 3rem;;
  }
+ @media screen and (max-width:17.5em){
+ 
+}
   &__content {
     &--heading {
     //   @media screen and (max-width:48em){
@@ -20,6 +23,9 @@
       font-size: 5.5rem;
       font-weight: 800;
       color: #fff;
+      @media screen and (max-width:17.5em){
+        font-size: 4rem;
+      }
       span {
         background: linear-gradient(
           171.21deg,

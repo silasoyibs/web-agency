@@ -6,7 +6,9 @@
       grid-template-columns:1fr; 
       padding:0 4rem;
      }
-    
+     @media screen and (max-width:17.5em){
+      padding:0 ;
+    }
   
     
     &__content{

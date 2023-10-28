@@ -11,7 +11,9 @@
    row-gap: 4rem;
    padding:0 4rem;
    }
-   
+   @media screen and (max-width:17.5em){
+    padding:0 1rem;
+  }
     &__content{
       &--heading{
         @media screen and (max-width:48em){
