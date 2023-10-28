@@ -72,3 +72,11 @@
 // .line {
 //   animation: line-animation 2s linear infinite;
 // }
+@media screen and (min-width:23em){
+  .service-header{
+    font-size: 1rem;
+  }
+  .service-content{
+    font-size: 1rem;
+  }
+}

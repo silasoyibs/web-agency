@@ -59,6 +59,9 @@ html {
  @media screen and (max-width:23em){
   font-size:50%;
  }
+ @media screen and (max-width:17.5em){
+  font-size:40%;
+ }
 }
 
 body {
@@ -193,3 +196,6 @@ body {
   
 }
 
+.display{
+  display: none !important ;
+}

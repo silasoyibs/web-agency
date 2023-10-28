@@ -41,6 +41,11 @@ html {
     font-size: 50%;
   }
 }
+@media screen and (max-width: 17.5em) {
+  html {
+    font-size: 40%;
+  }
+}
 
 body {
   background-color: #101010;
@@ -185,6 +190,10 @@ body {
     transform: translateX(0px);
   }
 }
+.display {
+  display: none !important;
+}
+
 .header {
   display: grid;
   grid-template-columns: max-content 1fr max-content;
@@ -573,6 +582,14 @@ body {
   display: none;
 }
 
+@media screen and (min-width: 23em) {
+  .service-header {
+    font-size: 1rem;
+  }
+  .service-content {
+    font-size: 1rem;
+  }
+}
 .recommendation {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -799,7 +816,7 @@ body {
 }
 @media screen and (max-width: 23em) {
   .blog__content {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 .blog__content-item {
