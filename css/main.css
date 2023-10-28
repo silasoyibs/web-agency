@@ -80,6 +80,11 @@ body {
   font-size: 2.1rem;
   color: #fff;
 }
+@media screen and (max-width: 23em) {
+  .heading--3 {
+    font-size: 1.5rem;
+  }
+}
 
 .p {
   color: #a2a2a2;
@@ -792,6 +797,11 @@ body {
   justify-content: center;
   align-items: stretch;
 }
+@media screen and (max-width: 23em) {
+  .blog__content {
+    font-size: 1.5rem;
+  }
+}
 .blog__content-item {
   margin-bottom: 30px;
   max-width: 30rem;
@@ -968,12 +978,11 @@ body {
 }
 @media screen and (max-width: 17.5em) {
   .Team {
-    padding: 0 4px 0 4px;
+    padding: 0;
   }
 }
 .Team__heading {
   text-align: center;
-  padding: 0 8rem;
 }
 @media screen and (max-width: 17.5em) {
   .Team__heading {
@@ -987,6 +996,11 @@ body {
   -moz-column-gap: 20px;
        column-gap: 20px;
   row-gap: 30px;
+}
+@media screen and (max-width: 17.5em) {
+  .Team__gallery {
+    padding: 0 4px 0 4px;
+  }
 }
 .Team__gallery-img {
   width: 100%;
@@ -1052,6 +1066,11 @@ body {
 }
 .Team__gallery__description {
   text-align: center;
+}
+@media screen and (max-width: 17.5em) {
+  .Team__gallery__description {
+    padding: 10rem;
+  }
 }
 .Team .btn--team {
   align-self: center;
