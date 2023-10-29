@@ -6,11 +6,13 @@
     align-items: stretch;
     justify-content: center;
     &-item {
-      max-width: 30rem;
-      min-width: 30rem;
+      width:30rem;
+      min-width:30rem;
       margin-bottom: 3rem;
-      display: grid;
-      justify-items: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: nowrap;
       row-gap: 2rem;
       background: #191919;
       border-radius: 5px;
@@ -72,11 +74,3 @@
 // .line {
 //   animation: line-animation 2s linear infinite;
 // }
-@media screen and (min-width:23em){
-  .service-header{
-    font-size: 1rem;
-  }
-  .service-content{
-    font-size: 1rem;
-  }
-}

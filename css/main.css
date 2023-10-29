@@ -85,11 +85,6 @@ body {
   font-size: 2.1rem;
   color: #fff;
 }
-@media screen and (max-width: 23em) {
-  .heading--3 {
-    font-size: 1.5rem;
-  }
-}
 
 .p {
   color: #a2a2a2;
@@ -532,11 +527,13 @@ body {
   justify-content: center;
 }
 .services__content-item {
-  max-width: 30rem;
+  width: 30rem;
   min-width: 30rem;
   margin-bottom: 3rem;
-  display: grid;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
   row-gap: 2rem;
   background: #191919;
   border-radius: 5px;
@@ -582,14 +579,6 @@ body {
   display: none;
 }
 
-@media screen and (min-width: 23em) {
-  .service-header {
-    font-size: 1rem;
-  }
-  .service-content {
-    font-size: 1rem;
-  }
-}
 .recommendation {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
